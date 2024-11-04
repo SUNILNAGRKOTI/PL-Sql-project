@@ -42,7 +42,8 @@ sql
 CREATE DATABASE user_registration_db;
 ```
 2) Update Database Connection in Code: Ensure your MySQL credentials are correct in the code (host, user, password, database).
-3) Create Users Table: The application automatically creates a users table if it does not already exist. This is done by the connect_db() function, which is called when the application starts.
+3) 
+4) Create Users Table: The application automatically creates a users table if it does not already exist. This is done by the connect_db() function, which is called when the application starts.
 
 ## Running the Application
 Run the Python script to start the application.
@@ -60,8 +61,12 @@ view_users(): Fetches and displays all registered users from the database in a f
 ## Usage
 1) Registering a User:
    Enter user information (name, age, course, duration).
+   
    Click on the Register button to save the data to the database.
+   
    A success message will display on successful registration.
-2) Viewing Registered Users:
+   
+3) Viewing Registered Users:
    Click on View Users to see a list of all registered users in a structured format with headers.
+   
    The list includes fields: Name, Age, Course, and Duration.
