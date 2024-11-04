@@ -24,19 +24,19 @@ This is a graphical user interface (GUI) application for registering users and s
 - **MySQL Connector for Python**: Install using `pip` if it's not already installed.
 
 ## Installation
-1. **Clone the Repository**:
+1) **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
    cd your-repository-name
 
-   Install Required Python Packages: Install the MySQL connector for Python using pip.
+## 2) Install Required Python Packages: Install the MySQL connector for Python using pip.
 
 ```bash
 pip install mysql-connector-python
 ```
-Set Up MySQL Database: Make sure MySQL server is running and create a database for this application, such as user_registration_db. See Database Setup below.
+## 3) Set Up MySQL Database: Make sure MySQL server is running and create a database for this application, such as user_registration_db. See Database Setup below.
 
-## Database Setup
+## 4) Database Setup
 Create the Database: Log in to MySQL and create a new database for user registrations.
 
 sql
