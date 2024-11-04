@@ -1,0 +1,82 @@
+
+CREATE DATABASE IF NOT EXISTS user_registration_db;
+
+USE user_registration_db;
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    course VARCHAR(50) NOT NULL,
+    duration VARCHAR(10) NOT NULL
+);
+select * from users;
+INSERT INTO users (name, age, course, duration) 
+VALUES ('Vijay', 24, 'MCA', '2 years');
+
+INSERT INTO users (name, age, course, duration) 
+VALUES ('gaurav', 26, 'bCA', '4 years');
+INSERT INTO users (name, age, course, duration) 
+VALUES ('nikhil', 21, 'MBA', '3 years');
+INSERT INTO users (name, age, course, duration) VALUES
+('Alice Smith', 21, 'MCA', '2 years'),
+('Bob Johnson', 23, 'BCA', '3 years'),
+('Charlie Lee', 22, 'MBA', '2 years'),
+('David Kim', 24, 'B-TECH', '4 years'),
+('Eva Chen', 20, 'MCA', '2 years'),
+('Frank Wright', 23, 'BCA', '3 years'),
+('Grace Green', 22, 'MBA', '2 years'),
+('Henry Young', 25, 'B-TECH', '4 years'),
+('Isabel Brown', 21, 'MCA', '2 years'),
+('Jack White', 24, 'BCA', '3 years'),
+('Karen Scott', 23, 'MBA', '2 years'),
+('Leo Thompson', 22, 'B-TECH', '4 years'),
+('Mona James', 20, 'MCA', '2 years'),
+('Nick Clark', 24, 'BCA', '3 years'),
+('Olivia Lewis', 22, 'MBA', '2 years'),
+('Paul Walker', 25, 'B-TECH', '4 years'),
+('Quinn Hall', 21, 'MCA', '2 years'),
+('Rose Allen', 23, 'BCA', '3 years'),
+('Sam Young', 22, 'MBA', '2 years'),
+('Tina Perez', 24, 'B-TECH', '4 years'),
+('Uma Davis', 20, 'MCA', '2 years'),
+('Victor Harris', 23, 'BCA', '3 years'),
+('Wendy Collins', 22, 'MBA', '2 years'),
+('Xander Roberts', 25, 'B-TECH', '4 years'),
+('Yara Nelson', 21, 'MCA', '2 years'),
+('Zane Reed', 24, 'BCA', '3 years'),
+('Amy Brooks', 23, 'MBA', '2 years'),
+('Brian Price', 22, 'B-TECH', '4 years'),
+('Cindy Cooper', 20, 'MCA', '2 years'),
+('Dylan Bailey', 24, 'BCA', '3 years'),
+('Emma Rivera', 22, 'MBA', '2 years'),
+('Fred Morris', 25, 'B-TECH', '4 years'),
+('Gina Ortiz', 21, 'MCA', '2 years'),
+('Hank Chavez', 23, 'BCA', '3 years'),
+('Ivy Griffin', 22, 'MBA', '2 years'),
+('John Torres', 24, 'B-TECH', '4 years'),
+('Kate Hughes', 20, 'MCA', '2 years'),
+('Liam Foster', 23, 'BCA', '3 years'),
+('Mia Gonzales', 22, 'MBA', '2 years'),
+('Noah Jenkins', 25, 'B-TECH', '4 years'),
+('Owen Knight', 21, 'MCA', '2 years'),
+('Piper Reynolds', 24, 'BCA', '3 years'),
+('Quincy Patel', 23, 'MBA', '2 years'),
+('Riley Powell', 22, 'B-TECH', '4 years'),
+('Sophie Ward', 20, 'MCA', '2 years'),
+('Tommy Barnes', 23, 'BCA', '3 years'),
+('Una Henderson', 22, 'MBA', '2 years'),
+('Vince Peters', 25, 'B-TECH', '4 years'),
+('Will Fisher', 21, 'MCA', '2 years');
+SELECT * FROM users
+WHERE age > 22;
+SELECT * FROM users
+WHERE course = 'MCA';
+SELECT * FROM users
+ORDER BY age DESC;
+SELECT * FROM users 
+WHERE name LIKE '%Smith%';
+SELECT duration, COUNT(*) AS total_users
+FROM users
+GROUP BY duration;
+select * from users where age<22;
+select * from users where course ='Bca';
